@@ -4,34 +4,70 @@
 @import "nav.sass"
 
 
-.nav_menu
-    width: 25%
-    position: fixed
-    height: 100vh
-    background: #312450
-    color: blue
-    +flex(column, center, center)
-    ul
-        text-align: right
-        width: 80%
-        li
-            width: 85%
-            border-bottom: 2px solid #7C61B6
-            padding: 15px
-            a
-                color: $color_text_hover
-                display: block
-                font-weight: bold
-                letter-spacing: 0.35em
-                text-transform: uppercase
-                font-size: 0.7em
-                +transition(0.6s)
-    & li a:hover
-        color: white
-        padding: 0px 5px 0px 5px
-        
+.side_menu
+	width: 22%
+	position: fixed
+	height: 100vh
+	background: #312450        
 
 .content
-    width: 75%
-    margin-left: 25%
+	margin-left: 22%
+	width: 78%
+	height: 100vh
+	background: #5E42A6
     
+.menu_wrap
+	padding: 55px
+	position: relative
+	top: 25%	
+
+	
+.menu
+	text-align: right
+	width: 100%
+	color: blue
+
+.item
+	margin-top: 25px
+
+	&:first-child
+		margin-top: 0px
+
+	a
+		color: $color_text_hover
+		display: block
+		font-weight: bold
+		letter-spacing: 0.35em
+		text-transform: uppercase
+		font-size: 14px
+		+transition(0.6s)
+		border-bottom: 2px solid transparent
+		border-image: linear-gradient(45deg, #5E42A5 0%, #B64E91 100%)
+		border-image-slice: 1
+		padding: 20px 0		
+		transition: all 0.3s ease-in
+		&:hover
+			color: red	
+
+.checker
+	display: none
+
+#checker_one
+	&:checked + .item a 
+		color: white
+
+#checker_two
+	&:checked + .item a 
+		color: white
+
+#checker_three
+	&:checked + .item a 
+		color: white
+
+#checker_four
+	&:checked + .item a 
+		color: white		
+
+
+article
+	border-bottom: 1px solid #fff
