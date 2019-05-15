@@ -4,70 +4,161 @@
 @import "nav.sass"
 
 
-.side_menu
+#side_bar
 	width: 22%
 	position: fixed
 	height: 100vh
-	background: #312450        
+	background: #312450
 
-.content
-	margin-left: 22%
+#content
 	width: 78%
+	margin-left: 22%
+	background-attachment: fixed
+	background-image: url(../../img/bg.jpg)
+	background-repeat: no-repeat
+	background-size: 100% 100%
+
+.button
+	+button
+	+transition(0.5s)
+	&:hover
+		background-color: rgba(255, 255, 255, 0.25)
+		border-color: white
+
+
+.welcome
 	height: 100vh
-	background: #5E42A6
-    
-.menu_wrap
-	padding: 55px
-	position: relative
-	top: 25%	
+	background-color: $bg_col_wellcome
+	+flex(column, center, flex-start)	 
 
-	
-.menu
-	text-align: right
-	width: 100%
-	color: blue
+	.text
+		width: 750px
+		margin-left: 8%
 
-.item
-	margin-top: 25px
+	h1
+		+font(white, 70px, unset, unset)
 
-	&:first-child
-		margin-top: 0px
+	p 
+		+font($color_text_hover, 25px, 1.6em, unset)
+		margin: 8% 0
 
-	a
-		color: $color_text_hover
-		display: block
-		font-weight: bold
-		letter-spacing: 0.35em
-		text-transform: uppercase
-		font-size: 14px
-		+transition(0.6s)
-		border-bottom: 2px solid transparent
-		border-image: linear-gradient(45deg, #5E42A5 0%, #B64E91 100%)
-		border-image-slice: 1
-		padding: 20px 0		
-		transition: all 0.3s ease-in
-		&:hover
-			color: red	
+		a
+			color: $color_text_hover 
+			border-bottom: 1px dotted $color_text_hover
 
-.checker
-	display: none
 
-#checker_one
-	&:checked + .item a 
+.who_we_are_1
+	background-color: $bg_col_who_1
+	height: 50vh
+
+	.images img
+		display: inline-block
+		height: 100%
+
+	.text_gallery
+		padding: $padding_text
+		display: inline-block
+		position: absolute
+
+		h2
+			color: white
+			font-size: 2.0em
+
+		p
+			margin: 50px 0
+			line-height: 2em    
+			color: $color_text_gallery
+
+
+
+.who_we_are_2
+	background-color: $bg_col_who_2 
+	height: 50vh
+
+	.images img
+		display: inline-block
+		height: 100%
+
+	.text_gallery
+		padding: $padding_text
+		display: inline-block
+		position: absolute
+
+		h2
+			color: white
+			margin-bottom: 30px
+			font-size: 2.0em
+
+		p
+			margin-bottom: 50px 
+			line-height: 2em
+			color: $color_text_gallery
+
+.who_we_are_3
+	background-color: $bg_col_who_3 
+	height: 50vh
+
+	.images img
+		display: inline-block
+		height: 100%
+
+	.text_gallery
+		padding: $padding_text
+		display: inline-block
+		position: absolute
+
+		h2
+			color: white
+			margin-bottom: 30px
+			font-size: 2.0em
+
+		p
+			margin-bottom: 50px
+			line-height: 2em
+			color: $color_text_gallery
+
+.what_we_do
+	background-color: $bg_col_what
+	height: 150vh
+
+	.what_text
+		padding: 6%
+		padding-bottom: 3%
+
+	h2
+		font-size: $h2_size
 		color: white
+	p
+		color: #DBA9CC
+		line-height: 1.75
+		font-size: 17px
+		margin: 3% 0
 
-#checker_two
-	&:checked + .item a 
+.table 
+	+flex(row, start, center)
+	flex-wrap: wrap
+
+	.tabl
+		width: 41%
+		padding: 50px
+		border: 2px solid #C26AA6
+		background-color: #BA5596
+
+	.icon
+		+span_icon 
+		position: absolute
+		margin-left: -20px
+	h3
 		color: white
-
-#checker_three
-	&:checked + .item a 
-		color: white
-
-#checker_four
-	&:checked + .item a 
-		color: white		
+		padding-left: 55px
+	p
+		color: #DBA9CC
+		line-height: 1.75
+		font-size: 18px
+		padding-left: 55px
 
 
-article
-	border-bottom: 1px solid #fff
+
+.get_in_touch
+	background-color: $bg_col_get
+	height: 100vh						

@@ -1,2 +1,49 @@
+.menu_wrap
+	padding: 55px
+	position: relative
+	top: 50%
+	transform: translateY(-50%)
 
+.menu
+	text-align: right
+	color: blue
+	display: flex
+	flex-direction: column
+	justify-content: space-around
+	height: 350px
+
+.note
+	display: block
+	+font(#736e7d, 13px, unset, bold)
+	letter-spacing: 0.35em
+	text-transform: uppercase	
+	border-bottom: 2px solid transparent
+	border-image: linear-gradient(45deg, #5E42A5 0%, #B64E91 100%)
+	border-image-slice: 1
+	padding: 5% 0		
+	+transition (0.2s)
+	
+	&:hover
+		color: #b9b9b9
+
+	
+
+.checker
+	display: none
+
+#checker_one
+	&:checked + .item a 
+		color: white
+
+#checker_two
+	&:checked + .item a 
+		color: white
+
+#checker_three
+	&:checked + .item a 
+		color: white
+
+#checker_four
+	&:checked + .item a 
+		color: white		
 
