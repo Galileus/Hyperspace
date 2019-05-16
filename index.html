@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -16,28 +16,28 @@
 		<div class="menu_wrap">
             <ul class="menu">
                 <input type="radio" name="menu" id="checker_one" class="checker">
-                <li class="item">
+                <li>
                     <a href="#welcome" class="note">
                         <label for="checker_one">welcome</label>
                     </a>
                 </li>
 
                 <input type="radio" name="menu" id="checker_two" class="checker">
-                <li class="item">
+                <li>
                     <a href="#who" class="note">
                         <label for="checker_two">who we are</label>
                     </a>
                 </li>
 
                 <input type="radio" name="menu" id="checker_three" class="checker">
-                <li class="item">
+                <li>
                     <a href="#what" class="note">
                         <label for="checker_three">what we do</label>
                     </a>
                 </li>
 
                 <input type="radio" name="menu" id="checker_four" class="checker">
-                <li class="item">
+                <li>
                     <a href="#get" class="note">
                         <label for="checker_four">get in touch</label>
                     </a>
@@ -146,15 +146,69 @@
 	        </div>
 	    </section>
 
-        <section class="get_in_touch" id="get">
-            <div>
+        <section class="get_in_touch">
+            <div class="text_get_in">
                 <h2>Get in touch</h2>
-                <p>Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada
-                    quis. Aliquam dapibus, lacus eget hendrerit bibendum, urna est aliquam sem, sit amet imperdiet est velit
+                <p>Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat
+                    malesuada
+                    quis. Aliquam dapibus, lacus eget hendrerit bibendum, urna est aliquam sem, sit amet imperdiet est
+                    velit
                     quis lorem.</p>
+                <div class="fields">
+                    <section class="forms">
+                        <form method="post" action="#">
+                            <div class="fields_form">
+                                <div class="form_name">
+                                    <label for="name">Name</label>
+                                    <input type="text" name="name">
+                                </div>
+                                <div class="form_email">
+                                    <label for="email">Email</label>
+                                    <input type="text" name="email">
+                                </div>
+                                <div class="message">
+                                    <label for="message">Message</label>
+                                    <textarea name="message" rows="5" resize="none"></textarea>
+                                </div>
+                            </div>
+                            <a href="#" class="button">Learn more</a>
+                        </form>
+                    </section>
+                    <section class="contact">
+                        <ul>
+                            <li class="item">
+                                <h3>Address</h3>
+                                <p> 12345 Somewhere Road #654
+                                    Nashville, TN 00000-0000
+                                    USA</p>
+                            </li>
+                            <li class="item">
+                                <h3>Email</h3>
+                                <a href="mailto:ser@untitled.tld">ser@untitled.tld</a>
+                            </li>
+                            <li class="item">
+                                <h3>Phone</h3>
+                                <a href="tel:(000) 000-0000">(000) 000-0000</a>
+                            </li>
+                            <li class="item">
+                                <h3>Social</h3>
+                                <p> <i class="fab fa-twitter"></i><i class="fab fa-facebook-f"></i><i
+                                        class="fab fa-github"></i><i class="fab fa-instagram"></i><i
+                                        class="fab fa-linkedin"></i></p>
+                            </li>
+                        </ul>
+                    </section>
+                </div>
             </div>
         </section>
-
+            <footer>
+        <section>
+            <ul class="foo">
+                <li>© Untitled. All rights reserved.</li>
+                <li>Design: <a href="#">HTML5 UP</a></li>
+            </ul>
+        </section>
+    </footer>
     </article>
 </body>
 
