@@ -2,6 +2,11 @@
 @import "var.sass"
 @import "mixin.sass"
 @import "nav.sass"
+@import "_breakpoints.sass"
+
+
+
+
 
 
 #side_bar
@@ -9,6 +14,7 @@
 	position: fixed
 	height: 100vh
 	background: #312450
+	overflow-y: auto
 
 #content
 	width: 78%
@@ -20,7 +26,7 @@
 
 .button
 	+button
-	+transition(0.5s)
+	+transition(0.2s)
 	&:hover
 		background-color: rgba(255, 255, 255, 0.25)
 		border-color: white
@@ -28,11 +34,13 @@
 
 .welcome
 	height: 100vh
+	min-height: 450px
 	background-color: $bg_col_wellcome
 	+flex(column, center, flex-start)	 
 
 	.text
 		width: 750px
+		min-height: 350px
 		margin-left: 8%
 
 	h1
@@ -46,88 +54,58 @@
 			color: $color_text_hover 
 			border-bottom: 1px dotted $color_text_hover
 
+.who_we_are
 
-.who_we_are_1
-	background-color: $bg_col_who_1
-	height: 50vh
+	.block	
+		+flex(row, flex-start, unset)
+		height: 495px
 
-	.images img
-		+gallery_img
+	.img-wrap
+		width: 35%		
+
+		img 
+			height: 100%
+
 
 	.text_gallery
-		padding: $padding_text
-		display: inline-block
-		position: absolute
+		width: 65%
+		padding: 6% 6% 2%
 
 		h2
-			+font(white, 2em, unset, unset)
+			+font(white, 45px, unset, unset)
 
 		p
-			margin: 50px 0
-			line-height: 2em    
-			color: $color_text_gallery
+			+font($color_text_gallery, 20px, 2em, unset)
+			margin: 30px 0
+
+
+	.one	
+		background-color: $bg_col_who_1
+
+	.two
+		background-color: $bg_col_who_2
+
+	.three	 	
+		background-color: $bg_col_who_3
 
 
 
-.who_we_are_2
-	background-color: $bg_col_who_2 
-	height: 50vh
 
-	.images img
-		+gallery_img
 
-	.text_gallery
-		padding: $padding_text
-		display: inline-block
-		position: absolute
-
-		h2
-			color: white
-			margin-bottom: 30px
-			font-size: 2.0em
-
-		p
-			margin-bottom: 50px 
-			line-height: 2em
-			color: $color_text_gallery
-
-.who_we_are_3
-	background-color: $bg_col_who_3 
-	height: 50vh
-
-	.images img
-		+gallery_img
-
-	.text_gallery
-		padding: $padding_text
-		display: inline-block
-		position: absolute
-
-		h2
-			color: white
-			margin-bottom: 30px
-			font-size: 2.0em
-
-		p
-			margin-bottom: 50px
-			line-height: 2em
-			color: $color_text_gallery
 
 .what_we_do
 	background-color: $bg_col_what
-	height: 150vh
+	height: 1450px
 
 	.what_text
 		padding: 6%
 		padding-bottom: 3%
 
 	h2
-		font-size: $h2_size
-		color: white
+		+font(white, 39px, unset, 600)
+
 	p
-		color: #DBA9CC
-		line-height: 1.75
-		font-size: 17px
+		+font(#DBA9CC, 22px, 1.75, unset)
 		margin: 3% 0
 
 .table 
@@ -138,7 +116,8 @@
 	border-radius: 5px
 
 	.tabl
-		width: 39.9%
+		min-height: 300px
+		width: 50%
 		padding: 50px
 		border: 1px solid rgba(255, 255, 255, 0.15)
 		background-color: #BA5596
@@ -146,14 +125,18 @@
 	.icon
 		+span_icon 
 		position: absolute
-		margin-left: -20px
+
+		.fa, .fas
+			position: absolute
+			top: 50%
+			left: 50%
+			transform: translate(-50%, -50%)
+
 	h3
-		color: white
+		+font(white, 24px, unset, 600)
 		padding-left: 55px
 	p
-		color: #DBA9CC
-		line-height: 1.75
-		font-size: 18px
+		+font(#DBA9CC, 22px, 1.75, 400)
 		padding-left: 55px
 		margin: 0px 0px 2em
 
@@ -253,3 +236,14 @@ footer
 			a
 				color: #644D95
 				border-bottom: 1px dotted #644D95
+
+
+
+@media screen and (max-width: 1680px) 
+
+	.text
+
+		h1
+			+font(white, 48px, unset, unset)
+		p 
+			+font($color_text_hover, 21px, 1.25em, unset)
