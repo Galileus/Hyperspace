@@ -1,0 +1,120 @@
+@media screen and (max-width: 1680px)
+
+	.menu_wrap
+		.note
+			a
+				+font(#736e7d, 11px, unset, bold)
+
+	.welcome
+		min-height: 350px 
+
+		.text
+			min-height: 290px
+
+			h1
+				+font(white, 48px, unset, unset)
+
+			p 
+				+font($color_text_hover, 21px, 1.6em, unset)
+
+	.who_we_are
+		.block
+			min-height: 390px
+			height: 50vh
+
+		.img-wrap
+			width: 30%		
+
+		.text_gallery
+			h2
+				+font(white, 30px, unset, unset)
+
+			p
+				+font($color_text_gallery, 17px, 2em, unset)
+
+
+@media screen and (max-width: 1440px)
+
+	.who_we_are
+		.img-wrap
+			width: 35%		
+
+
+	.what_we_do
+		height: 1105px
+
+		.title
+		h2
+			+font(white, 30px, unset, 600)
+		p
+			+font(#DBA9CC, 18px, 1.75, unset)
+
+		.tabl
+			height: 240px
+
+			.text-wrap
+				h3
+					+font(white, 22px, unset, 600)			
+				p
+					+font(#DBA9CC, 16px, 1.75, 400)		
+
+
+	.get_in_touch              
+		min-height: 715px
+
+	.get-wrap    
+		h2
+			+font(white, 30px, unset, unset) 
+		p
+			+font($color_text_gallery, 17px, 1.75, unset)
+
+	footer
+		height: 155px
+
+
+@media screen and (max-width: 1024px)
+	main
+		display: flex
+		flex-direction: column
+
+	#side_bar
+		width: 100%
+		height: auto
+		position: fixed
+		z-index: 10000
+
+	.menu_wrap
+		+flex(row, center, unset)
+		padding: 0
+		height: 100%
+		min-height: 50px
+
+
+
+	.menu
+		+flex(row, space-between, flex-start)
+		min-height: 50px
+		width: 550px
+
+	.note
+		a
+			+font(#736e7d, 10px, unset, bold)
+			padding: 20px 0	
+
+	#content
+		+flex(column, center, unset)
+		margin-left: 0
+		width: 100%
+		margin-top: 54px
+
+
+
+@media screen and (max-width: 768px)
+	.welcome
+		.text
+			width: auto
+			min-height: 350px
+			padding: 8% 8% 15%
+			margin-left: 0
+	main
+		width: 768px		

@@ -84,20 +84,6 @@ ul, li {
   color: white;
 }
 
-@media screen and (max-width: 1680px) {
-  .text h1 {
-    color: white;
-    font-size: 48px;
-    line-height: unset;
-    font-weight: unset;
-  }
-  .text p {
-    color: #AA98D1;
-    font-size: 21px;
-    line-height: 1.25em;
-    font-weight: unset;
-  }
-}
 #side_bar {
   width: 22%;
   position: fixed;
@@ -207,9 +193,9 @@ ul, li {
 
 .what_we_do {
   background-color: #B74E91;
-  height: 1450px;
+  height: 1320px;
 }
-.what_we_do .what_text {
+.what_we_do .title {
   padding: 6%;
   padding-bottom: 3%;
 }
@@ -236,61 +222,72 @@ ul, li {
   margin-bottom: 50px;
   border: 1px solid #C26AA6;
   border-radius: 5px;
+  position: relative;
+  z-index: 1000;
 }
-.table .tabl {
-  min-height: 300px;
+
+.tabl {
+  height: 300px;
   width: 50%;
-  padding: 50px;
+  padding: 70px 50px 50px 120px;
   border: 1px solid rgba(255, 255, 255, 0.15);
   background-color: #BA5596;
+  position: relative;
 }
-.table .icon {
+.tabl .icon {
   border-radius: 50%;
   width: 50px;
   height: 50px;
   background-color: white;
   color: #BA5596;
   position: absolute;
+  top: 20%;
+  left: 10%;
 }
-.table .icon .fa, .table .icon .fas {
+.tabl .icon .fa, .tabl .icon .fas {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
-.table h3 {
+.tabl .text-wrap {
+  text-align: left;
+}
+.tabl .text-wrap h3 {
   color: white;
   font-size: 24px;
   line-height: unset;
   font-weight: 600;
-  padding-left: 55px;
 }
-.table p {
+.tabl .text-wrap p {
   color: #DBA9CC;
   font-size: 22px;
   line-height: 1.75;
   font-weight: 400;
-  padding-left: 55px;
-  margin: 0px 0px 2em;
 }
 
 .get_in_touch {
   background-color: #5E42A6;
   height: 100vh;
+  min-height: 800px;
 }
 
-.text_get_in {
-  padding: 4em 4em 2em;
+.get-wrap {
+  padding: 8% 8% 3%;
 }
-.text_get_in h2 {
-  font-size: 2em;
+.get-wrap h2 {
   color: white;
-  margin: 0px 0px 0.5em;
+  font-size: 38px;
+  line-height: unset;
+  font-weight: unset;
+  margin-bottom: 2%;
 }
-.text_get_in p {
+.get-wrap p {
   color: #A7A5D9;
+  font-size: 22px;
   line-height: 1.75;
-  font-size: 1.15em;
+  font-weight: unset;
+  margin-bottom: 4%;
 }
 
 .fields {
@@ -301,6 +298,7 @@ ul, li {
   width: calc(65.7% - 2em);
   border-right: 1px solid rgba(255, 255, 255, 0.15);
   padding-right: 25px;
+  min-height: 470px;
 }
 
 form .fields_form {
@@ -370,17 +368,20 @@ form .fields_form {
   width: calc(28.75% - 2em);
   padding-left: 2em;
 }
+.contact li {
+  margin-bottom: 15%;
+}
 
 .item h3 {
   color: white;
+  font-size: 24px;
 }
 .item p {
-  color: #DBA9CC;
-  font-size: 1.3em;
+  font-size: 22px;
 }
 .item a {
   color: #A7A5D9;
-  font-size: 1.3em;
+  font-size: 22px;
   border-bottom: 1px dotted #AA98D1;
 }
 .item i {
@@ -390,7 +391,12 @@ form .fields_form {
 
 footer {
   width: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
   background-color: #493382;
+  height: 240px;
 }
 footer section {
   padding: 25px 60px;
@@ -403,7 +409,7 @@ footer .foo {
 }
 footer .foo li {
   color: #644D95;
-  margin-right: 15px;
+  margin-right: 17px;
   border-left: solid 1px rgba(255, 255, 255, 0.15);
   padding-left: 12px;
 }
@@ -413,17 +419,169 @@ footer .foo li a {
 }
 
 @media screen and (max-width: 1680px) {
-  .text h1 {
+  .menu_wrap .note a {
+    color: #736e7d;
+    font-size: 11px;
+    line-height: unset;
+    font-weight: bold;
+  }
+
+  .welcome {
+    min-height: 350px;
+  }
+  .welcome .text {
+    min-height: 290px;
+  }
+  .welcome .text h1 {
     color: white;
     font-size: 48px;
     line-height: unset;
     font-weight: unset;
   }
-  .text p {
+  .welcome .text p {
     color: #AA98D1;
     font-size: 21px;
-    line-height: 1.25em;
+    line-height: 1.6em;
     font-weight: unset;
+  }
+
+  .who_we_are .block {
+    min-height: 390px;
+    height: 50vh;
+  }
+  .who_we_are .img-wrap {
+    width: 30%;
+  }
+  .who_we_are .text_gallery h2 {
+    color: white;
+    font-size: 30px;
+    line-height: unset;
+    font-weight: unset;
+  }
+  .who_we_are .text_gallery p {
+    color: #A7A5D9;
+    font-size: 17px;
+    line-height: 2em;
+    font-weight: unset;
+  }
+}
+@media screen and (max-width: 1440px) {
+  .who_we_are .img-wrap {
+    width: 35%;
+  }
+
+  .what_we_do {
+    height: 1105px;
+  }
+  .what_we_do h2 {
+    color: white;
+    font-size: 30px;
+    line-height: unset;
+    font-weight: 600;
+  }
+  .what_we_do p {
+    color: #DBA9CC;
+    font-size: 18px;
+    line-height: 1.75;
+    font-weight: unset;
+  }
+  .what_we_do .tabl {
+    height: 240px;
+  }
+  .what_we_do .tabl .text-wrap h3 {
+    color: white;
+    font-size: 22px;
+    line-height: unset;
+    font-weight: 600;
+  }
+  .what_we_do .tabl .text-wrap p {
+    color: #DBA9CC;
+    font-size: 16px;
+    line-height: 1.75;
+    font-weight: 400;
+  }
+
+  .get_in_touch {
+    min-height: 715px;
+  }
+
+  .get-wrap h2 {
+    color: white;
+    font-size: 30px;
+    line-height: unset;
+    font-weight: unset;
+  }
+  .get-wrap p {
+    color: #A7A5D9;
+    font-size: 17px;
+    line-height: 1.75;
+    font-weight: unset;
+  }
+
+  footer {
+    height: 155px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  main {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #side_bar {
+    width: 100%;
+    height: auto;
+    position: fixed;
+    z-index: 10000;
+  }
+
+  .menu_wrap {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: unset;
+    padding: 0;
+    height: 100%;
+    min-height: 50px;
+  }
+
+  .menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    min-height: 50px;
+    width: 550px;
+  }
+
+  .note a {
+    color: #736e7d;
+    font-size: 10px;
+    line-height: unset;
+    font-weight: bold;
+    padding: 20px 0;
+  }
+
+  #content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: unset;
+    margin-left: 0;
+    width: 100%;
+    margin-top: 54px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .welcome .text {
+    width: auto;
+    min-height: 350px;
+    padding: 8% 8% 15%;
+    margin-left: 0;
+  }
+
+  main {
+    width: 768px;
   }
 }
 
