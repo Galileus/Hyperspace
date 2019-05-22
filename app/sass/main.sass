@@ -23,6 +23,7 @@
 .button
 	+button
 	+transition(0.2s)
+
 	&:hover
 		background-color: rgba(255, 255, 255, 0.25)
 		border-color: white
@@ -106,6 +107,9 @@
 		+font(#DBA9CC, 22px, 1.75, unset)
 		margin: 3% 0
 
+.get
+	p
+		+font(#A7A5D9, 22px, 1.75, unset)
 
 
 .what_we_do
@@ -158,88 +162,73 @@
 
 .get_in_touch                     
 	background-color: #5E42A6
-	height: 100vh
-	min-height: 800px
+	min-height: 720px
 
 .get-wrap    
 	padding: 8% 8% 3%
 
-	.title
-		p
-			+font(#A7A5D9, unset, 1.75, unset)
+.info
+	+flex(row, unset, unset)
 
+	.inputs
+		width: calc(65.7% - 2em) 
+		border-right: 1px solid rgba(255, 255, 255, 0.15)
+		padding-right: 25px
+		min-height: 470px
 
-.fields
-	display: flex
+		form		
+			display: flex
+			flex-wrap: wrap
+			width: calc(100% + 1.5em)
+			margin-bottom: 20px
 
-.forms
-	width: calc(65.7% - 2em) 
-	border-right: 1px solid rgba(255, 255, 255, 0.15)
-	padding-right: 25px
-	min-height: 470px
+			.form
+				width: calc(50% - 0.75em)
+				margin: 0px 0px 0.5em
+				+font(white, 24px, 2.5, bold)
+				+flex(column, unset, unset)				
+				 
+				input 
+					height: 2.7em
+					width: 85%   
+					+input_color
 
-form
-	.fields_form
-		display: flex
-		flex-wrap: wrap
-		width: calc(100% + 1.5em)
-		margin-bottom: 20px
+			.text				
+				textarea
+					width: 490px
+					height: 160px
+					+input_color
 
-.form_name
-	+label
-	width: calc(50% - 0.75em)
-	input 
-		height: 2.7em
-		width: 85%
-		+input_color
+	.contact
+		width: calc(28.75% - 2em)
+		padding-left: 2em
+			
 
-.form_email
-	+label
-	width: calc(50% - 0.75em) 
-	input 
-		height: 2.7em
-		width: 85%   
-		+input_color
+		.item
+			margin-bottom: 15%
+			h6
+				color: white
+				font-size: 22px
+				margin-bottom: 20px
 
-.message
-	+label
-	textarea
-		width: 470px
-		height: 160px
-		+input_color
+			p, a
+				font-size: 20px
+				color: #A7A5D9
 
-.contact
-	width: calc(28.75% - 2em)
-	padding-left: 2em
+			a
+				border-bottom: 1px dotted #AA98D1
 
-	li 
-		margin-bottom: 15%
+			i
+				margin-right: 20px
+				font-size: 1em
 
-.item
-	h6
-		color: $h_color_white
-		font-size: 24px
-		margin-bottom: 20px
-
-	p
-		font-size: 22px
-		color: #A7A5D9
-
-	a
-		color: #A7A5D9
-		font-size: 22px
-		border-bottom: 1px dotted #AA98D1
-
-	i
-		margin-right: 20px
-		font-size: 1em
 
 
 footer
-	+content
 	+flex (column, center, flex-start) 
 	background-color: #493382
 	height: 240px
+	width: auto
 
 	section 
 		padding: 25px 60px
@@ -259,3 +248,5 @@ footer
 
 
 @import "_breakpoint.sass"
+
+

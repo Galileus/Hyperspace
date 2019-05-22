@@ -217,6 +217,13 @@ ul, li {
   margin: 3% 0;
 }
 
+.get p {
+  color: #A7A5D9;
+  font-size: 22px;
+  line-height: 1.75;
+  font-weight: unset;
+}
+
 .what_we_do {
   background-color: #B74E91;
 }
@@ -277,49 +284,44 @@ ul, li {
 
 .get_in_touch {
   background-color: #5E42A6;
-  height: 100vh;
-  min-height: 800px;
+  min-height: 720px;
 }
 
 .get-wrap {
   padding: 8% 8% 3%;
 }
-.get-wrap .title p {
-  color: #A7A5D9;
-  font-size: unset;
-  line-height: 1.75;
-  font-weight: unset;
-}
 
-.fields {
+.info {
   display: flex;
+  flex-direction: row;
+  justify-content: unset;
+  align-items: unset;
 }
-
-.forms {
+.info .inputs {
   width: calc(65.7% - 2em);
   border-right: 1px solid rgba(255, 255, 255, 0.15);
   padding-right: 25px;
   min-height: 470px;
 }
-
-form .fields_form {
+.info .inputs form {
   display: flex;
   flex-wrap: wrap;
   width: calc(100% + 1.5em);
   margin-bottom: 20px;
 }
-
-.form_name {
-  color: white;
-  font-weight: bold;
-  line-height: 2.5;
-  font-size: 1.75em;
+.info .inputs form .form {
+  width: calc(50% - 0.75em);
   margin: 0px 0px 0.5em;
+  color: white;
+  font-size: 24px;
+  line-height: 2.5;
+  font-weight: bold;
   display: flex;
   flex-direction: column;
-  width: calc(50% - 0.75em);
+  justify-content: unset;
+  align-items: unset;
 }
-.form_name input {
+.info .inputs form .form input {
   height: 2.7em;
   width: 85%;
   background-color: #664aaa;
@@ -327,79 +329,46 @@ form .fields_form {
   border-radius: 5px;
   padding: 5px 1em;
 }
-
-.form_email {
-  color: white;
-  font-weight: bold;
-  line-height: 2.5;
-  font-size: 1.75em;
-  margin: 0px 0px 0.5em;
-  display: flex;
-  flex-direction: column;
-  width: calc(50% - 0.75em);
-}
-.form_email input {
-  height: 2.7em;
-  width: 85%;
-  background-color: #664aaa;
-  border: 1px solid rgba(255, 255, 255, 0.15);
-  border-radius: 5px;
-  padding: 5px 1em;
-}
-
-.message {
-  color: white;
-  font-weight: bold;
-  line-height: 2.5;
-  font-size: 1.75em;
-  margin: 0px 0px 0.5em;
-  display: flex;
-  flex-direction: column;
-}
-.message textarea {
-  width: 470px;
+.info .inputs form .text textarea {
+  width: 490px;
   height: 160px;
   background-color: #664aaa;
   border: 1px solid rgba(255, 255, 255, 0.15);
   border-radius: 5px;
   padding: 5px 1em;
 }
-
-.contact {
+.info .contact {
   width: calc(28.75% - 2em);
   padding-left: 2em;
 }
-.contact li {
+.info .contact .item {
   margin-bottom: 15%;
 }
-
-.item h6 {
+.info .contact .item h6 {
   color: white;
-  font-size: 24px;
+  font-size: 22px;
   margin-bottom: 20px;
 }
-.item p {
-  font-size: 22px;
+.info .contact .item p, .info .contact .item a {
+  font-size: 20px;
   color: #A7A5D9;
 }
-.item a {
-  color: #A7A5D9;
-  font-size: 22px;
+.info .contact .item a {
   border-bottom: 1px dotted #AA98D1;
 }
-.item i {
+.info .contact .item i {
   margin-right: 20px;
   font-size: 1em;
 }
 
 footer {
-  width: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
   background-color: #493382;
   height: 240px;
+  width: auto;
 }
 footer section {
   padding: 25px 60px;
@@ -486,6 +455,13 @@ footer .foo li a {
     font-weight: unset;
   }
 
+  .get p {
+    color: #A7A5D9;
+    font-size: 20px;
+    line-height: 1.75;
+    font-weight: unset;
+  }
+
   .what_we_do .tabl .text-wrap h4 {
     color: white;
     font-size: 22px;
@@ -517,6 +493,13 @@ footer .foo li a {
     font-weight: unset;
   }
 
+  .get p {
+    color: #A7A5D9;
+    font-size: 18px;
+    line-height: 1.75;
+    font-weight: unset;
+  }
+
   .what_we_do .tabl {
     height: 240px;
     padding: 75px 50px 50px 120px;
@@ -538,10 +521,26 @@ footer .foo li a {
     min-height: 715px;
   }
 
-  .get-wrap .title p {
+  .info .inputs form .form {
+    color: white;
+    font-size: 20px;
+    line-height: 2.5;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    justify-content: unset;
+    align-items: unset;
+  }
+  .info .contact .item h6 {
+    color: white;
+    font-size: 20px;
+    line-height: unset;
+    font-weight: unset;
+  }
+  .info .contact .item p, .info .contact .item a {
     color: #A7A5D9;
     font-size: 18px;
-    line-height: 1.75;
+    line-height: unset;
     font-weight: unset;
   }
 
@@ -580,6 +579,13 @@ footer .foo li a {
     font-weight: unset;
   }
 
+  .get p {
+    color: #A7A5D9;
+    font-size: 16px;
+    line-height: 1.75;
+    font-weight: unset;
+  }
+
   .what_we_do .tabl {
     padding: 60px 50px 50px 120px;
   }
@@ -594,13 +600,6 @@ footer .foo li a {
     font-size: 16px;
     line-height: 1.75;
     font-weight: 400;
-  }
-
-  .get-wrap .title p {
-    color: #A7A5D9;
-    font-size: 16px;
-    line-height: 1.75;
-    font-weight: unset;
   }
 
   footer {
@@ -702,6 +701,19 @@ footer .foo li a {
     text-align: center;
     padding: 2% 6% 2%;
   }
+  .who_we_are .text_gallery h2 {
+    color: white;
+    font-size: 18px;
+    line-height: unset;
+    font-weight: unset;
+  }
+  .who_we_are .text_gallery p {
+    color: #A7A5D9;
+    font-size: 14px;
+    line-height: 2em;
+    font-weight: unset;
+    margin: 20px 0;
+  }
 
   .title h3 {
     color: white;
@@ -711,10 +723,17 @@ footer .foo li a {
   }
   .title p {
     color: #DBA9CC;
-    font-size: 12px;
+    font-size: 13px;
     line-height: 1.75;
     font-weight: unset;
     margin: 2% 0;
+  }
+
+  .get p {
+    color: #A7A5D9;
+    font-size: 13px;
+    line-height: 1.75;
+    font-weight: unset;
   }
 
   .what_we_do {
@@ -734,6 +753,10 @@ footer .foo li a {
     width: 100%;
     padding: 50px 50px 50px 100px;
   }
+  .what_we_do .tabl .icon {
+    top: 10%;
+    left: 5%;
+  }
   .what_we_do .tabl .text-wrap h4 {
     color: white;
     font-size: 16px;
@@ -745,13 +768,6 @@ footer .foo li a {
     font-size: 12px;
     line-height: 1.75;
     font-weight: 400;
-  }
-
-  .get-wrap .title p {
-    color: #A7A5D9;
-    font-size: 12px;
-    line-height: 1.75;
-    font-weight: unset;
   }
 }
 

@@ -1,10 +1,17 @@
+
+
+// --------------------------------------min 1681------------------------------------------------------
+
 @media screen and (min-width: 1681px)
 	.who_we_are
 		.block
-			height: 450px
-			
+			height: 450px			
 		.img-wrap
 			width: 450px
+
+// --------------------------------------max 1680------------------------------------------------------
+
+
 
 
 @media screen and (max-width: 1680px)
@@ -42,6 +49,9 @@
 			+font(white, 35px, unset, 600)
 		p
 			+font(#DBA9CC, 20px, 1.75, unset)
+	.get
+		p
+			+font(#A7A5D9, 20px, 1.75, unset)		
 
 
 	.what_we_do
@@ -52,6 +62,7 @@
 				p
 					+font(#DBA9CC, 18px, 1.75, 400)				
 
+// --------------------------------------max 1440------------------------------------------------------
 
 @media screen and (max-width: 1440px)
 
@@ -64,6 +75,9 @@
 			+font(white, 30px, unset, 600)
 		p
 			+font(#DBA9CC, 18px, 1.75, unset)
+	.get
+		p
+			+font(#A7A5D9, 18px, 1.75, unset)
 
 	.what_we_do
 		.tabl
@@ -77,14 +91,25 @@
 
 	.get_in_touch              
 		min-height: 715px
-	.get-wrap
-		.title
-			p
-				+font(#A7A5D9, 18px, 1.75, unset)		
+
+	.info
+		.inputs
+			form
+				.form
+					+font(white, 20px, 2.5, bold)
+					+flex(column, unset, unset)
+
+		.contact
+			.item
+				h6
+					+font(white, 20px, unset, unset)
+				p, a
+					+font(#A7A5D9, 18px, unset, unset)		
 
 	footer
 		height: 155px
 
+// --------------------------------------max 1280------------------------------------------------------
 
 @media screen and (max-width: 1280px)
 
@@ -105,6 +130,9 @@
 			+font(white, 28px, unset, 600)
 		p
 			+font(#DBA9CC, 16px, 1.75, unset)
+	.get
+		p
+			+font(#A7A5D9, 16px, 1.75, unset)
 
 	.what_we_do
 		.tabl
@@ -114,17 +142,12 @@
 					+font(white, 20px, unset, 600)			
 				p
 					+font(#DBA9CC, 16px, 1.75, 400)
-
-
-	.get-wrap
-		.title
-			p
-				+font(#A7A5D9, 16px, 1.75, unset)		
+		
 
 	footer
 		height: 100px
 
-
+// --------------------------------------max 1024------------------------------------------------------
 
 @media screen and (max-width: 1024px)
 	main
@@ -170,6 +193,7 @@
 				+font($color_text_gallery, 14px, 2em, unset)
 				margin: 20px 0
 
+// --------------------------------------max 768------------------------------------------------------
 
 @media screen and (max-width: 768px)
 	.welcome
@@ -194,13 +218,23 @@
 			text-align: center
 			padding: 2% 6% 2%
 
+			h2
+				+font(white, 18px, unset, unset)
+			p
+				+font($color_text_gallery, 14px, 2em, unset)
+				margin: 20px 0	
+
 	.title
 		h3
 			+font(white, 24px, unset, 600)
 
 		p
-			+font(#DBA9CC, 12px, 1.75, unset)
+			+font(#DBA9CC, 13px, 1.75, unset)
 			margin: 2% 0
+
+	.get
+		p
+			+font(#A7A5D9, 13px, 1.75, unset)	
 
 	.what_we_do
 		background-color: $bg_col_what
@@ -212,19 +246,20 @@
 		.table 
 			+flex(column, center, center)
 
-
 		.tabl
 			height: 200px
 			width: 100%
 			padding: 50px 50px 50px 100px
+
+			.icon
+				top: 10%
+				left: 5%
 
 			.text-wrap
 				h4
 					+font(white, 16px, unset, 600)			
 				p
 					+font(#DBA9CC, 12px, 1.75, 400)
+						
 
-	.get-wrap
-		.title
-			p
-				+font(#A7A5D9, 12px, 1.75, unset)						
+// --------------------------------------max 480------------------------------------------------------
