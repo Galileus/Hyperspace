@@ -1,75 +1,120 @@
 @media screen and (max-width: 1680px)
-
 	.menu_wrap
 		.note
 			a
 				+font(#736e7d, 11px, unset, bold)
 
 	.welcome
-		min-height: 350px 
-
-		.text
-			min-height: 290px
-
+		.head
 			h1
 				+font(white, 48px, unset, unset)
-
 			p 
 				+font($color_text_hover, 21px, 1.6em, unset)
+				margin: 8% 0
+
 
 	.who_we_are
 		.block
-			min-height: 390px
-			height: 50vh
-
+			height: 390px
+			
 		.img-wrap
-			width: 30%		
+			width: 30%
 
 		.text_gallery
+			width: 70%
+
 			h2
 				+font(white, 30px, unset, unset)
-
 			p
-				+font($color_text_gallery, 17px, 2em, unset)
+				+font($color_text_gallery, 17px, 2em, unset)	
+
+	.title
+		h3
+			+font(white, 35px, unset, 600)
+		p
+			+font(#DBA9CC, 20px, 1.75, unset)
+
+
+	.what_we_do
+		.tabl
+			.text-wrap
+				h4
+					+font(white, 22px, unset, 600)					
+				p
+					+font(#DBA9CC, 18px, 1.75, 400)				
 
 
 @media screen and (max-width: 1440px)
 
 	.who_we_are
-		.img-wrap
-			width: 35%		
+		.block
+			height: 350px
 
-
-	.what_we_do
-		height: 1105px
-
-		.title
-		h2
+	.title
+		h3
 			+font(white, 30px, unset, 600)
 		p
 			+font(#DBA9CC, 18px, 1.75, unset)
 
+	.what_we_do
 		.tabl
 			height: 240px
-
+			padding: 75px 50px 50px 120px
 			.text-wrap
-				h3
+				h4
 					+font(white, 22px, unset, 600)			
 				p
-					+font(#DBA9CC, 16px, 1.75, 400)		
-
+					+font(#DBA9CC, 18px, 1.75, 400)
 
 	.get_in_touch              
 		min-height: 715px
-
-	.get-wrap    
-		h2
-			+font(white, 30px, unset, unset) 
-		p
-			+font($color_text_gallery, 17px, 1.75, unset)
+	.get-wrap
+		.title
+			p
+				+font(#A7A5D9, 18px, 1.75, unset)		
 
 	footer
 		height: 155px
+
+
+@media screen and (max-width: 1280px)
+
+	.welcome
+		.head
+			p 
+				margin: 7% 0
+
+	.who_we_are
+		.text_gallery
+			h2
+				+font(white, 28px, unset, unset)
+			p
+				+font($color_text_gallery, 16px, 2em, unset)
+
+	.title
+		h3
+			+font(white, 28px, unset, 600)
+		p
+			+font(#DBA9CC, 16px, 1.75, unset)
+
+	.what_we_do
+		.tabl
+			padding: 60px 50px 50px 120px
+			.text-wrap
+				h4
+					+font(white, 20px, unset, 600)			
+				p
+					+font(#DBA9CC, 16px, 1.75, 400)
+
+
+	.get-wrap
+		.title
+			p
+				+font(#A7A5D9, 16px, 1.75, unset)		
+
+	footer
+		height: 100px
+
 
 
 @media screen and (max-width: 1024px)
@@ -89,8 +134,6 @@
 		height: 100%
 		min-height: 50px
 
-
-
 	.menu
 		+flex(row, space-between, flex-start)
 		min-height: 50px
@@ -107,14 +150,63 @@
 		width: 100%
 		margin-top: 54px
 
+	.who_we_are			
+		.img-wrap
+			width: 35%
+		.text_gallery
+			width: 65%
+			h2
+				+font(white, 26px, unset, unset)
+			p
+				+font($color_text_gallery, 14px, 2em, unset)
+				margin: 20px 0
 
 
 @media screen and (max-width: 768px)
 	.welcome
-		.text
+		.head
 			width: auto
-			min-height: 350px
-			padding: 8% 8% 15%
-			margin-left: 0
-	main
-		width: 768px		
+			p
+				margin: 6% 0
+
+	.who_we_are
+		.block	
+			+flex(column, flex-start, center)
+			min-height: 500px
+
+		.img-wrap
+			width: 35%
+			height: 55%
+			
+
+		.text_gallery
+			width: 100%
+			height: 45%
+			text-align: center
+			padding: 2% 6% 2%
+
+	.title
+		h3
+			+font(white, 24px, unset, 600)
+
+		p
+			+font(#DBA9CC, 12px, 1.75, unset)
+			margin: 2% 0
+
+	.what_we_do
+
+		.tabl
+			height: 200px
+			width: 50%
+			padding: 50px 50px 50px 100px
+
+			.text-wrap
+				h4
+					+font(white, 16px, unset, 600)			
+				p
+					+font(#DBA9CC, 12px, 1.75, 400)
+
+	.get-wrap
+		.title
+			p
+				+font(#A7A5D9, 12px, 1.75, unset)						

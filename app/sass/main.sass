@@ -34,37 +34,38 @@
 	background-color: $bg_col_wellcome
 	+flex(column, center, flex-start)	 
 
-	.text
-		width: 750px
+	.head
+		width: 1000px
 		min-height: 350px
-		margin-left: 8%
+		padding: 8%
 
 	h1
 		+font(white, 70px, unset, unset)
 
 	p 
 		+font($color_text_hover, 25px, 1.6em, unset)
-		margin: 8% 0
+		margin: 6% 0
 
 		a
 			color: $color_text_hover 
 			border-bottom: 1px dotted $color_text_hover
 
 .who_we_are
-
 	.block	
 		+flex(row, flex-start, unset)
-		height: 495px
+		height: 450px
 
 	.img-wrap
-		width: 35%		
-
-		img 
+		width: 32%
+		a	
+			display: block	
+			width: 100%
 			height: 100%
+			background-size: 100% 100%
 
 
 	.text_gallery
-		width: 65%
+		width: 68%
 		padding: 6% 6% 2%
 
 		h2
@@ -78,69 +79,79 @@
 	.one	
 		background-color: $bg_col_who_1
 
+		.img-wrap
+			& > a				
+				background-image: url(../../img/pic01.jpg)
+
 	.two
 		background-color: $bg_col_who_2
+
+		.img-wrap
+			& > a			
+				background-image: url(../../img/pic02.jpg)
 
 	.three	 	
 		background-color: $bg_col_who_3
 
+		.img-wrap
+			& > a			
+				background-image: url(../../img/pic03.jpg)
 
 
-
-
-
-.what_we_do
-	background-color: $bg_col_what
-	height: 1320px
-
-	.title
-		padding: 6%
-		padding-bottom: 3%
-
-	h2
-		+font(white, 39px, unset, 600)
+.title
+	h3
+		+font(white, 40px, unset, 600)
 
 	p
 		+font(#DBA9CC, 22px, 1.75, unset)
 		margin: 3% 0
 
-.table 
-	+flex(row, start, center)
-	flex-wrap: wrap
-	margin-bottom: 50px
-	border: 1px solid #C26AA6
-	border-radius: 5px
-	position: relative
-	z-index: 1000
 
-.tabl
-	height: 300px
-	width: 50%
-	padding: 70px 50px 50px 120px
-	border: 1px solid rgba(255, 255, 255, 0.15)
-	background-color: #BA5596
-	position: relative
 
-	.icon
-		+span_icon 
-		position: absolute
-		top: 20%
-		left: 10%
+.what_we_do
+	background-color: $bg_col_what
 
-		.fa, .fas
+	.container
+		padding: 6% 6% 3%
+
+
+	.table 
+		+flex(row, start, center)
+		flex-wrap: wrap
+		margin-bottom: 50px
+		border: 1px solid #C26AA6
+		border-radius: 5px
+		position: relative
+		z-index: 1000
+
+	.tabl
+		height: 300px
+		width: 50%
+		padding: 100px 50px 50px 120px
+		border: 1px solid rgba(255, 255, 255, 0.15)
+		background-color: #BA5596
+		position: relative
+
+		.icon
+			+span_icon 
 			position: absolute
-			top: 50%
-			left: 50%
-			transform: translate(-50%, -50%)
+			top: 15%
+			left: 8%
 
-	.text-wrap
-		text-align: left			
+			.fa, .fas
+				position: absolute
+				top: 50%
+				left: 50%
+				transform: translate(-50%, -50%)
 
-		h3
-			+font(white, 24px, unset, 600)
-			
-		p
-			+font(#DBA9CC, 22px, 1.75, 400)
+		.text-wrap
+			text-align: left			
+
+			h4
+				+font(white, 24px, unset, 600)
+				
+			p
+				+font(#DBA9CC, 20px, 1.75, 400)
 
 
 
@@ -152,12 +163,10 @@
 
 .get-wrap    
 	padding: 8% 8% 3%
-	h2
-		+font(white, 38px, unset, unset)
-		margin-bottom: 2%   
-	p
-		+font($color_text_gallery, 22px, 1.75, unset)
-		margin-bottom: 4%
+
+	.title
+		p
+			+font(#A7A5D9, unset, 1.75, unset)
 
 
 .fields
@@ -207,12 +216,14 @@ form
 		margin-bottom: 15%
 
 .item
-	h3
+	h6
 		color: $h_color_white
 		font-size: 24px
+		margin-bottom: 20px
 
 	p
 		font-size: 22px
+		color: #A7A5D9
 
 	a
 		color: #A7A5D9
@@ -237,14 +248,14 @@ footer
 		+flex(row, left, baseline)
 
 		li
-			color: #644D95
+			color: #A7A5D9
 			margin-right: 17px
 			border-left: solid 1px rgba(255, 255, 255, 0.15)
 			padding-left: 12px
 
 			a
-				color: #644D95
-				border-bottom: 1px dotted #644D95
+				color: #A7A5D9
+				border-bottom: 1px dotted #A7A5D9
 
 
 @import "_breakpoint.sass"
