@@ -421,6 +421,14 @@ footer .foo li a {
   border-bottom: 1px dotted #A7A5D9;
 }
 
+@media screen and (min-width: 1681px) {
+  .who_we_are .block {
+    height: 450px;
+  }
+  .who_we_are .img-wrap {
+    width: 450px;
+  }
+}
 @media screen and (max-width: 1680px) {
   .menu_wrap .note a {
     color: #736e7d;
@@ -709,9 +717,21 @@ footer .foo li a {
     margin: 2% 0;
   }
 
+  .what_we_do {
+    background-color: #B74E91;
+  }
+  .what_we_do .container {
+    padding: 6% 6% 3%;
+  }
+  .what_we_do .table {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
   .what_we_do .tabl {
     height: 200px;
-    width: 50%;
+    width: 100%;
     padding: 50px 50px 50px 100px;
   }
   .what_we_do .tabl .text-wrap h4 {
