@@ -226,15 +226,15 @@
 
 	.title
 		h3
-			+font(white, 24px, unset, 600)
+			+font(white, 28px, unset, 600)
 
 		p
-			+font(#DBA9CC, 13px, 1.75, unset)
+			+font(#DBA9CC, 16px, 1.75, unset)
 			margin: 2% 0
 
 	.get
 		p
-			+font(#A7A5D9, 13px, 1.75, unset)	
+			+font(#A7A5D9, 16px, 1.75, unset)	
 
 	.what_we_do
 		background-color: $bg_col_what
@@ -257,9 +257,40 @@
 
 			.text-wrap
 				h4
-					+font(white, 16px, unset, 600)			
+					+font(white, 18px, unset, 600)			
 				p
-					+font(#DBA9CC, 12px, 1.75, 400)
-						
+					+font(#DBA9CC, 16px, 1.75, 400)
+
+	.get_in_touch 
+	.info
+		+flex(column, center, unset)
+
+		.inputs
+			width: 100%
+			border-bottom: 1px solid rgba(255, 255, 255, 0.15)
+			border-right: unset
+
+			form
+				.form
+					+font(white, 18px, 2.5, bold)
+				.text				
+					textarea
+						width: 570px
+
+		.contact
+			width: 100%
+			padding-top: 60px			
+
+			.item
+				margin-bottom: 5%
+				h6
+					color: white
+					font-size: 18px
+					margin-bottom: 20px
+
+				p, a
+					font-size: 16px
+					color: #A7A5D9	
+				
 
 // --------------------------------------max 480------------------------------------------------------

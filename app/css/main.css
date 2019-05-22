@@ -717,13 +717,13 @@ footer .foo li a {
 
   .title h3 {
     color: white;
-    font-size: 24px;
+    font-size: 28px;
     line-height: unset;
     font-weight: 600;
   }
   .title p {
     color: #DBA9CC;
-    font-size: 13px;
+    font-size: 16px;
     line-height: 1.75;
     font-weight: unset;
     margin: 2% 0;
@@ -731,7 +731,7 @@ footer .foo li a {
 
   .get p {
     color: #A7A5D9;
-    font-size: 13px;
+    font-size: 16px;
     line-height: 1.75;
     font-weight: unset;
   }
@@ -759,15 +759,52 @@ footer .foo li a {
   }
   .what_we_do .tabl .text-wrap h4 {
     color: white;
-    font-size: 16px;
+    font-size: 18px;
     line-height: unset;
     font-weight: 600;
   }
   .what_we_do .tabl .text-wrap p {
     color: #DBA9CC;
-    font-size: 12px;
+    font-size: 16px;
     line-height: 1.75;
     font-weight: 400;
+  }
+
+  .info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: unset;
+  }
+  .info .inputs {
+    width: 100%;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+    border-right: unset;
+  }
+  .info .inputs form .form {
+    color: white;
+    font-size: 18px;
+    line-height: 2.5;
+    font-weight: bold;
+  }
+  .info .inputs form .text textarea {
+    width: 570px;
+  }
+  .info .contact {
+    width: 100%;
+    padding-top: 60px;
+  }
+  .info .contact .item {
+    margin-bottom: 5%;
+  }
+  .info .contact .item h6 {
+    color: white;
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  .info .contact .item p, .info .contact .item a {
+    font-size: 16px;
+    color: #A7A5D9;
   }
 }
 
