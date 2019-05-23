@@ -294,3 +294,83 @@
 				
 
 // --------------------------------------max 480------------------------------------------------------
+@media screen and (max-width: 480px)
+
+
+	#side_bar
+		display: none
+
+	#content 
+		margin-top: 0px
+
+	.welcome
+		.head
+			h1
+				font-size: 32px	
+			p
+				font-size: 16px
+
+	.button
+		width: 100%
+		text-align: center
+
+	.who_we_are
+		.block	
+			height: 100vh
+		.img-wrap
+			height: 40%
+			width: 50%
+		.text_gallery
+			height: 60%
+			h2
+				+font(white, 20px, unset, unset)
+			p
+				+font($color_text_gallery, 16px, 2em, unset)
+
+	.title
+		h3
+			+font(white, 20px, unset, 600)
+		p
+			+font(#DBA9CC, 16px, 1.75, unset)
+	.get
+		p
+			+font(#A7A5D9, 16px, 1.75, unset)
+
+
+	.what_we_do
+		.tabl
+			.text-wrap
+				h4
+					+font(white, 16px, unset, 600)					
+				p
+					+font(#DBA9CC, 16px, 1.75, 400)
+
+	.get_in_touch 
+	.info
+		.inputs
+			padding-bottom: 60px
+			form
+				flex-direction: column
+				flex-wrap: nowrap
+				.form
+					width: 100%
+					input 
+						width: 100%   
+				.text				
+					textarea
+						width: 100%
+		.contact
+			padding-left: 0
+
+	footer
+		height: 160px
+		section
+			height: 100% 
+			padding: 25px 25px 10px
+			+flex(column, center, unset) 
+		.foo
+			+flex(column, space-around, baseline)
+			height: 60%
+			li
+				border-left: none
+

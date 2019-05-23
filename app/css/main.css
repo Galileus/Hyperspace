@@ -807,5 +807,124 @@ footer .foo li a {
     color: #A7A5D9;
   }
 }
+@media screen and (max-width: 480px) {
+  #side_bar {
+    display: none;
+  }
+
+  #content {
+    margin-top: 0px;
+  }
+
+  .welcome .head h1 {
+    font-size: 32px;
+  }
+  .welcome .head p {
+    font-size: 16px;
+  }
+
+  .button {
+    width: 100%;
+    text-align: center;
+  }
+
+  .who_we_are .block {
+    height: 100vh;
+  }
+  .who_we_are .img-wrap {
+    height: 40%;
+    width: 50%;
+  }
+  .who_we_are .text_gallery {
+    height: 60%;
+  }
+  .who_we_are .text_gallery h2 {
+    color: white;
+    font-size: 20px;
+    line-height: unset;
+    font-weight: unset;
+  }
+  .who_we_are .text_gallery p {
+    color: #A7A5D9;
+    font-size: 16px;
+    line-height: 2em;
+    font-weight: unset;
+  }
+
+  .title h3 {
+    color: white;
+    font-size: 20px;
+    line-height: unset;
+    font-weight: 600;
+  }
+  .title p {
+    color: #DBA9CC;
+    font-size: 16px;
+    line-height: 1.75;
+    font-weight: unset;
+  }
+
+  .get p {
+    color: #A7A5D9;
+    font-size: 16px;
+    line-height: 1.75;
+    font-weight: unset;
+  }
+
+  .what_we_do .tabl .text-wrap h4 {
+    color: white;
+    font-size: 16px;
+    line-height: unset;
+    font-weight: 600;
+  }
+  .what_we_do .tabl .text-wrap p {
+    color: #DBA9CC;
+    font-size: 16px;
+    line-height: 1.75;
+    font-weight: 400;
+  }
+
+  .info .inputs {
+    padding-bottom: 60px;
+  }
+  .info .inputs form {
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+  .info .inputs form .form {
+    width: 100%;
+  }
+  .info .inputs form .form input {
+    width: 100%;
+  }
+  .info .inputs form .text textarea {
+    width: 100%;
+  }
+  .info .contact {
+    padding-left: 0;
+  }
+
+  footer {
+    height: 160px;
+  }
+  footer section {
+    height: 100%;
+    padding: 25px 25px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: unset;
+  }
+  footer .foo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: baseline;
+    height: 60%;
+  }
+  footer .foo li {
+    border-left: none;
+  }
+}
 
 /*# sourceMappingURL=main.css.map */
